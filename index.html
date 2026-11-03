@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A.WILDAN NASAI'E</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="scroll-progress" id="scrollProgress" role="progressbar" aria-label="Progres halaman" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"></div>
+
+  <!-- Tombol menu (hanya muncul di HP) -->
+  <button class="menu-button" id="menuButton" aria-label="Buka menu">&#9776;</button>
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-brand">
+      <span class="brand-mark">WN</span>
+      <span>A.WILDAN NASAI'E</span>
+    </div>
+    <nav class="sidebar-menu">
+      <a href="#beranda">Beranda</a>
+      <a href="#tentang">Tentang Saya</a>
+      <a href="#hobi">Hobi</a>
+      <a href="#pendidikan">Pendidikan</a>
+      <a href="#sosial">Media Sosial</a>
+    </nav>
+    <button class="theme-toggle" id="themeToggle" type="button" aria-label="Aktifkan mode gelap" aria-pressed="false">
+      <span class="theme-toggle-icon" aria-hidden="true">☾</span>
+      <span class="theme-toggle-label">Mode gelap</span>
+    </button>
+    <p class="sidebar-note">Mahasiswa Sistem Informasi<br>Universitas Islam Indragiri</p>
+  </aside>
+
+  <main class="content">
+
+    <!-- A. BERANDA -->
+    <section class="hero" id="beranda">
+      <div class="hero-text">
+        <p class="hero-greeting">Halo, selamat datang! Saya</p>
+        <h1>A.WILDAN NASAI'E</h1>
+        <p class="hero-status">Mahasiswa Sistem Informasi Universitas Islam Indragiri</p>
+        <p class="hero-desc">
+          Saya sedang belajar membangun sistem dan website. Di halaman ini
+          kamu bisa mengenal saya lebih dekat: biodata, hobi, dan perjalanan pendidikan saya.
+        </p>
+        <a class="button" href="#tentang">Kenali saya</a>
+      </div>
+      <div class="hero-photo">
+        <div class="hero-photo-inner">
+          <!-- Ganti foto profil di sini -->
+          <img src="assets/foto-profil.jpeg" alt="Foto A.Wildan Nasai'e">
+        </div>
+      </div>
+      <div class="hero-tech-decoration" aria-hidden="true">SISTEM INFORMASI  </div>
+    </section>
+
+    <!-- B. TENTANG SAYA -->
+    <section class="section" id="tentang">
+      <div class="about-heading">
+        <div>
+          <h2>Tentang Saya</h2>
+          <p>Mengenal lebih dekat profil pribadi saya.</p>
+        </div>
+      </div>
+
+      <div class="about-grid">
+        <figure class="profile-photo-wrap">
+          <img class="profile-card-photo" src="assets/foto-profil.jpeg" alt="Foto profil A. Wildan Nasai'e">
+        </figure>
+
+        <article class="card biodata-card">
+          <h3>Biodata</h3>
+          <dl class="biodata">
+            <div class="biodata-row">
+              <dt><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="3.5"/><path d="M5 20c.5-3.5 3.1-5.5 7-5.5s6.5 2 7 5.5"/></svg>Nama lengkap</dt>
+              <dd>A.WILDAN NASAI'E</dd>
+            </div>
+            <div class="biodata-row">
+              <dt><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="3.5"/><path d="M5 20c.5-3.5 3.1-5.5 7-5.5s6.5 2 7 5.5"/></svg>Nama panggilan</dt>
+              <dd>Wildan</dd>
+            </div>
+            <div class="biodata-row">
+              <dt><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 10c0 5-7 11-7 11S5 15 5 10a7 7 0 1 1 14 0Z"/><circle cx="12" cy="10" r="2.2"/></svg>Tempat lahir</dt>
+              <dd>Tembilahan Kota</dd>
+            </div>
+            <div class="biodata-row">
+              <dt><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="6" width="16" height="14" rx="2"/><path d="M8 4v4m8-4v4M4 10h16"/></svg>Tanggal lahir</dt>
+              <dd>27 Oktober 2006</dd>
+            </div>
+            <div class="biodata-row">
+              <dt><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 10c0 5-7 11-7 11S5 15 5 10a7 7 0 1 1 14 0Z"/><circle cx="12" cy="10" r="2.2"/></svg>Asal</dt>
+              <dd>Tembilahan</dd>
+            </div>
+          </dl>
+        </article>
+      </div>
+
+      <div class="profile-info-grid">
+        <article class="card profile-info-card">
+          <span class="profile-info-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M3 9.5 12 5l9 4.5-9 4.5-9-4.5Z"/><path d="M7 12v5c3 2.5 7 2.5 10 0v-5m4-2.5V16"/></svg>
+          </span>
+          <h3>Pendidikan</h3>
+          <p>Universitas Islam Indragiri, Fakultas Teknik dan Ilmu Komputer, Program Studi Sistem Informasi.</p>
+        </article>
+        <article class="card profile-info-card">
+          <span class="profile-info-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="m12 3 1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8L12 3Z"/><path d="m19 15 .9 2.1L22 18l-2.1.9L19 21l-.9-2.1L16 18l2.1-.9L19 15Z"/></svg>
+          </span>
+          <h3>Fun Fact</h3>
+          <p>Suka mengeksplorasi teknologi, belajar hal baru, dan penasaran dengan cara kerja sesuatu, terutama dalam dunia pemrograman.</p>
+        </article>
+        <article class="card profile-info-card">
+          <span class="profile-info-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M20.8 8.8c0 5.4-8.8 11-8.8 11s-8.8-5.6-8.8-11A4.8 4.8 0 0 1 12 6.3a4.8 4.8 0 0 1 8.8 2.5Z"/></svg>
+          </span>
+          <h3>Hobi dan Minat</h3>
+          <ul class="interest-list">
+            <li>Membaca</li>
+            <li>Coding</li>
+            <li>Olahraga</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- C. HOBI -->
+    <section class="section" id="hobi">
+      <h2>Hobi</h2>
+      <div class="card-grid">
+        <!-- Untuk menambah hobi, salin satu blok <article> ini -->
+        <article class="card photo-card">
+          <img src="assets/hobi-membaca.jpeg" alt="Membaca">
+          <div class="photo-card-body">
+            <h3>Membaca</h3>
+            <p>Saya suka membaca novel, menikmati cerita dan imajinasi di dalamnya, serta mengeksplorasi hal baru, belajar teknologi, dan mencoba membuat sesuatu yang bermanfaat.</p>
+          </div>
+        </article>
+        <article class="card photo-card">
+          <img src="assets/hobi-coding.jpeg" alt="Coding">
+          <div class="photo-card-body">
+            <h3>Coding</h3>
+            <p>Saya suka belajar coding, mengeksplorasi teknologi, dan mencoba membuat website atau program sederhana. Bagi saya, coding adalah cara menarik untuk mengasah kreativitas, logika, dan kemampuan memecahkan masalah.</p>
+          </div>
+        </article>
+        <article class="card photo-card">
+          <img src="assets/hobi-olahraga.jpeg" alt="Olahraga">
+          <div class="photo-card-body">
+            <h3>Olahraga</h3>
+            <p>Saya suka berolahraga, terutama bersepeda. Olahraga membantu saya menjaga kesehatan fisik dan mental.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- D. PENDIDIKAN -->
+    <section class="section" id="pendidikan">
+      <h2>Pendidikan</h2>
+      <div class="timeline">
+        <!-- Setiap blok .timeline-item adalah satu jenjang pendidikan -->
+        <div class="timeline-item">
+          <img src="assets/pend-paud.jpeg" alt="Pendidikan Anak Usia Dini">
+          <div>
+            <h3>PAUD BINARI</h3>
+            <p class="level">Pendidikan Anak Usia Dini</p>
+            <p class="year">Tahun: 2010 – 2013</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <img src="assets/pend-sd.jpeg" alt="Sekolah Dasar">
+          <div>
+            <h3>SD 009 TEMBILAHAN KOTA</h3>
+            <p class="level">Sekolah Dasar</p>
+            <p class="year">Tahun: 2014 – 2019</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <img src="assets/pend-smp.jpeg" alt="Sekolah Menengah Pertama">
+          <div>
+            <h3>PONPES DARUL RAHMAN TEMPULING</h3>
+            <p class="level">Sekolah Menengah Pertama</p>
+            <p class="year">Tahun: 2019 – 2022</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <img src="assets/pend-sma1.jpeg" alt="Sekolah Menengah Atas">
+          <div>
+            <h3>PONPES DARUL RAHMAN TEMPULING</h3>
+            <p class="level">Sekolah Menengah Atas</p>
+            <p class="year">Tahun: 2022 – 2023</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <img src="assets/pend-sma2.jpeg" alt="Sekolah Menengah Atas">
+          <div>
+            <h3>MA.SABILAL MUHTADIN</h3>
+            <p class="level">Sekolah Menengah Atas</p>
+            <p class="year">Tahun: 2023 – 2025</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <img src="assets/pend-kampus.jpeg" alt="Universitas Islam Indragiri">
+          <div>
+            <h3>Universitas Islam Indragiri</h3>
+            <p class="level">Perguruan Tinggi</p>
+            <p class="year">Tahun: 2025 – Sekarang</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- E. MEDIA SOSIAL -->
+    <section class="section" id="sosial">
+      <h2>Media Sosial</h2>
+      <div class="social-row">
+        <!-- Ganti nilai href dengan link akun kamu -->
+        <a class="social" href="https://www.instagram.com/_idhnn" target="_blank" rel="noopener" aria-label="Instagram">
+          <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1" class="dot"/></svg>
+          <span>Instagram</span>
+        </a>
+        <a class="social" href="https://www.facebook.com/share/19MaZYzWQ6/" target="_blank" rel="noopener" aria-label="Facebook">
+          <svg viewBox="0 0 24 24"><path d="M14 8h3V4h-3a4 4 0 0 0-4 4v3H7v4h3v6h4v-6h3l1-4h-4V8z"/></svg>
+          <span>Facebook</span>
+        </a>
+        <a class="social" href="https://www.tiktok.com/@tokohaslanjabata?is_from_webapp=1&sender_device=pc" target="_blank" rel="noopener" aria-label="TikTok">
+          <svg viewBox="0 0 24 24"><path d="M14 3v11a4 4 0 1 1-4-4M14 3c0 3 2 5 5 5"/></svg>
+          <span>TikTok</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- F. FOOTER -->
+    <footer class="footer">
+      <div class="footer-main">
+        <div class="footer-brand">
+          <a class="footer-brand-link" href="#beranda">
+            <span class="brand-mark" aria-hidden="true">WN</span>
+            <span>A. WILDAN NASAI'E</span>
+          </a>
+          <p>Mahasiswa Sistem Informasi yang terus belajar dan berkembang melalui teknologi.</p>
+        </div>
+
+        <nav class="footer-nav" aria-label="Navigasi footer">
+          <h2>Jelajahi</h2>
+          <a href="#beranda">Beranda</a>
+          <a href="#tentang">Tentang Saya</a>
+          <a href="#hobi">Hobi</a>
+          <a href="#pendidikan">Pendidikan</a>
+        </nav>
+
+        <div class="footer-social">
+          <h2>Temukan Saya</h2>
+          <a href="https://www.instagram.com/_idhnn" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1" class="dot"/></svg>
+            Instagram
+          </a>
+          <a href="https://www.facebook.com/share/19MaZYzWQ6/" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 8h3V4h-3a4 4 0 0 0-4 4v3H7v4h3v6h4v-6h3l1-4h-4V8z"/></svg>
+            Facebook
+          </a>
+          <a href="https://www.tiktok.com/@tokohaslanjabata?is_from_webapp=1&amp;sender_device=pc" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3v11a4 4 0 1 1-4-4M14 3c0 3 2 5 5 5"/></svg>
+            TikTok
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; <span id="year">2026</span> A. Wildan Nasai'e. Semua hak dilindungi.</p>
+        <a class="to-top" href="#beranda">Kembali ke atas</a>
+      </div>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
